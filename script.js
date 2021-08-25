@@ -108,3 +108,27 @@ console.log(itCompanies.shift());
 console.log(itCompanies.pop());
 
 // Remove all IT companies
+
+/* First remove all the punctuations and change the string to array and count the number of words in the array
+
+let text =
+'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
+console.log(words)
+console.log(words.length) */
+let text = 'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
+
+//with the use of regular expressions
+text = text.replace(/[.,]/g , '')
+
+// In countries array check if 'Ethiopia' exists in the array if it exists print 'ETHIOPIA'. If it does not exist add to the countries list.
+let aCountry = `Ethiopia`;
+countries.indexOf(aCountry) !== -1 
+? console.log(`${aCountry.toUpperCase()}`) 
+: console.log(`No match`);
+
+// Concatenate the following two variables and store it in a fullStack variable.
+
+const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+const backEnd = ['Node','Express', 'MongoDB']
+const fullStack = frontEnd.concat(backEnd);
+console.log(fullStack)
