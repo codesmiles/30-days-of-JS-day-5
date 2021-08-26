@@ -96,7 +96,7 @@ console.log(companySlice);
 companySlice2 = itCompanies.slice(0,4);
 
 //19. Slice out the middle IT company or companies from the array
-console.log(itCompanies.slice(3,1));
+console.log(itCompanies.slice(0,3).concat(itCompanies.slice(4,7)))
 
 //20. Remove the first IT company from the array
 console.log(itCompanies.shift());
